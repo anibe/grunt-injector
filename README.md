@@ -153,7 +153,9 @@ Gruntfile.js:
 ```js
 grunt.initConfig({
   injector: {
-    options: {},
+    options: {
+      addRootSlash: false
+    },
     local_dependencies: {
       files: {
         'index.html': ['**/*.js', '**/*.css'],
